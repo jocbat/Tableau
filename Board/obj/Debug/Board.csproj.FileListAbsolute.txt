@@ -1,0 +1,5 @@
+c:\users\jocelyn\documents\visual studio 2012\Projects\Board\Board\bin\Debug\Board.dll
+c:\users\jocelyn\documents\visual studio 2012\Projects\Board\Board\bin\Debug\Board.pdb
+c:\users\jocelyn\documents\visual studio 2012\Projects\Board\Board\obj\Debug\Board.csprojResolveAssemblyReference.cache
+c:\users\jocelyn\documents\visual studio 2012\Projects\Board\Board\obj\Debug\Board.dll
+c:\users\jocelyn\documents\visual studio 2012\Projects\Board\Board\obj\Debug\Board.pdb

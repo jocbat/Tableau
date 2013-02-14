@@ -1,0 +1,7 @@
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\bin\Debug\BoardTests.dll
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\bin\Debug\BoardTests.pdb
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\bin\Debug\Board.dll
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\bin\Debug\Board.pdb
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\obj\Debug\BoardTests.csprojResolveAssemblyReference.cache
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\obj\Debug\BoardTests.dll
+c:\Users\JOCELYN\documents\visual studio 2012\Projects\Board\BoardTests\obj\Debug\BoardTests.pdb
