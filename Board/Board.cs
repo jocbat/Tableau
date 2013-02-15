@@ -7,11 +7,24 @@ namespace BoardManipulation
 {
     public class Board
     {
-        public Board()
+        /// <summary>
+        /// Crée un board. Le 1er utilisateur est automatiquement administrateur.
+        /// </summary>
+        /// <param name="user"></param>
+        public Board(User user)
         {
             columns = new List<Column>();
+            members = new List<User>();
+            members.Add(user);
         }
-        
+
+        private List<User> members;
+
+        public virtual IList<User> getMembers()
+        {
+            return members;
+        }
+
         private IList<Column> columns;
 
         /// <summary>
@@ -114,6 +127,23 @@ namespace BoardManipulation
             foreach (Column column in columns)
             {
                 column.RemoveFilteredCards(filter);
+            }
+        }
+
+        /// <summary>
+        /// Vide toutes les cartes du board
+        /// </summary>
+        public void CleanCards()
+        {
+            RemoveCards(card => true);
+        }
+
+        public void Delete()
+        {
+            CleanCards(); // Pour faire "joli" :p
+            foreach (User user in members)
+            {
+                user.UnSubscribe(this);
             }
         }
     }

@@ -7,12 +7,22 @@ namespace BoardManipulation
 {
     public class User
     {
+        public User()
+        {
+            boards = new List<Board>();
+        }
+        
         private string name;
         private string forName;
         private string email;
 
         // les board auxquels a accès l'utilisateur
         private IList<Board> boards;
+
+        public IList<Board> getBoards()
+        {
+            return boards;
+        }
 
         /// <summary>
         /// Le mail de l'utilisateur a-t-il le format ? (exemple : "toto@tutu.fr")
@@ -42,6 +52,24 @@ namespace BoardManipulation
             {
                 card.Delete();
             }
+        }
+
+        /// <summary>
+        /// S'inscrire afin d'être un utilisater du board
+        /// </summary>
+        /// <param name="board"></param>
+        public virtual void Subsribe(Board board)
+        {
+            boards.Add(board);
+        }
+
+        /// <summary>
+        /// Se désinscrire afin de ne plus être un utilisater du board
+        /// </summary>
+        /// <param name="board"></param>
+        public virtual void UnSubscribe(Board board)
+        {
+            boards.Remove(board);
         }
     }
 }

@@ -72,6 +72,7 @@ namespace BoardManipulation
 
         public virtual void MoveTo(Column column)
         {
+            // Si la carte est est déjà posée sur une colonne on la retire
             if (actualColumn != null)
             {
                 actualColumn.RemoveCard(this);
